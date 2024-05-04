@@ -78,3 +78,20 @@ bool search(int rollNo, Node** previous, Node** current)
     }
     return (*current != NULL);
 }
+
+void deleteNode()
+{
+    Node* previous, * current;
+    int rollNo;
+
+    cout << "\nEnter the roll number of the student whose record is to be deleted: ";
+    cin >> rollNo;
+
+    if (START == NULL)
+    {
+        cout << "List is emty" << endl;
+        return;
+    }
+
+    current = START;
+    previous = NULL;
